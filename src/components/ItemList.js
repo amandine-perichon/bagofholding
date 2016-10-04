@@ -20,9 +20,9 @@ export default React.createClass({
     return (
       <View style={styles.container}>
         <TouchableHighlight onPress={this.props.onBack}>
-          <Text>Back</Text>
+          <Text style={styles.back}>Back</Text>
         </TouchableHighlight>
-        <ScrollView>
+        <ScrollView style={styles.itemList}>
           {items}
         </ScrollView>
       </View>

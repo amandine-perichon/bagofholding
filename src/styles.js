@@ -26,5 +26,12 @@ export default StyleSheet.create({
   character: {
     borderWidth: 0.5,
     borderColor: '#d6d7da'
+  },
+  itemList: {
+    borderWidth: 0.5,
+    borderColor: '#d6d7da'
+  },
+  back: {
+    color: 'blue'
   }
 })
