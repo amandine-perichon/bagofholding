@@ -14,27 +14,34 @@ export default React.createClass({
   },
   getInitialState () {
     return {
-      characterName: "",
-      characterClass: ""
+      characterName: '',
+      characterClass: ''
     }
+  },
+  clearText () {
+    this.nameInput.setNativeProps({text: ''})
+    this.classInput.setNativeProps({text: ''})
   },
   render () {
     return (
       <View style={styles.characterInputBox}>
         <TextInput
+          ref={component => this.nameInput = component}
           style={styles.input}
           placeholder="Enter your character's name"
           onChangeText={(text) => this.setState({characterName: text})} />
         <TextInput
+          ref={component => this.classInput = component}
           style={styles.input}
           placeholder="Enter your character's class"
           onChangeText={(text) => this.setState({characterClass: text})} />
           <TouchableHighlight onPress={() => {
               this.props.onCharacterAdd(this.state)
               this.setState({
-                characterName: "",
-                characterClass: ""
+                characterName: '',
+                characterClass: ''
               })
+              this.clearText()
             }}>
             <Text>Add</Text>
           </TouchableHighlight>
