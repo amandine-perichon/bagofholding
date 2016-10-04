@@ -15,6 +15,16 @@ export default StyleSheet.create({
   input: {
     height: 20,
     borderWidth: 0.5,
+    borderColor: '#d6d7da',
+    margin: 1
+  },
+  characterList: {
+    borderWidth: 0.5,
+    borderColor: '#d6d7da',
+    padding: 10
+  },
+  character: {
+    borderWidth: 0.5,
     borderColor: '#d6d7da'
   }
 })

@@ -1,15 +1,36 @@
 const initialState = [
   {
     characterName: "Bryn",
-    characterClass: "Druid"
+    characterClass: "Druid",
+    items: [
+      {
+        itemType: "Potion",
+        itemName: "Potion of Greate Healing",
+        itemRarity: "Rare"
+      }
+    ]
   },
   {
     characterName: "Eric",
-    characterClass: "Bard"
+    characterClass: "Bard",
+    items: [
+      {
+        itemType: "Potion",
+        itemName: "Potion of Greate Healing",
+        itemRarity: "Rare"
+      }
+    ]
   },
   {
     characterName: "Noma",
-    characterClass: "Wizard"
+    characterClass: "Wizard",
+    items: [
+      {
+        itemType: "Potion",
+        itemName: "Potion of Greate Healing",
+        itemRarity: "Rare"
+      }
+    ]
   }
 ]
 
