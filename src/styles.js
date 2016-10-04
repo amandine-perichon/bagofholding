@@ -4,18 +4,17 @@ import { StyleSheet } from 'react-native'
 export default StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
     backgroundColor: '#F5FCFF',
+    padding: 30
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
+  characterInputBox: {
+    borderWidth: 0.5,
+    borderColor: '#d6d7da',
+    padding: 10
   },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
+  input: {
+    height: 20,
+    borderWidth: 0.5,
+    borderColor: '#d6d7da'
+  }
 })
